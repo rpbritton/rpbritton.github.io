@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- https://codepen.io/sachinchoolur/pen/poebzpV -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Split Keyboard</title>
+    <link rel="shortcut icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-thumbnail.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-video.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code|Lato&display=swap">
+
+    <style>
+        body {
+            height: 100vh;
+            background-color: #e8e8e8;
+            font-family: 'Lato', sans-serif;
+            color: #282828;
+        }
+        
+        #content {
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: #d8d8d8;
+            border-width: 1px;
+            text-align: center;
+        }
+        
+        #content a {
+            color: #282828;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #name {
+            padding: 15px 25px;
+            font-size: 2em;
+            border-bottom-style: solid;
+            border-bottom-color: #d8d8d8;
+            border-bottom-width: 1px;
+        }
+        
+        #info>div {
+            padding: 15px 20px;
+            white-space: nowrap;
+            transition: background-color 200ms;
+        }
+        
+        .link:hover,
+        .link:active {
+            background-color: #efefef;
+            cursor: pointer;
+        }
+        
+        .gallery-item {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header d-flex flex-column align-items-center">
+        <div id="content" class="mt-4 mb-4">
+            <div id="name">SPLIT KEYBOARD</div>
+            <div id="info">
+                <div id="github" class="link">
+                    <a href="https://github.com/rpbritton/keyboards">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-sm">
+        <div class="row justify-content-center mt-0 mb-4">
+            <div class="col col-md-10">
+                <div class="gallery-container" id="animated-thumbnails-gallery">
+                    <a class="gallery-item" data-src="./imgs/00.jpg" data-sub-html="<p>The final split keyboard put together.</p>">
+                        <img class="img-responsive" src="./imgs/00.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/01.jpg" data-sub-html="<p>These pieces of acrylic were laser cut and will be the sides of the keyboard.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/01.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/02.jpg" data-sub-html="<p>The metal plates were cut on a CNC machine.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/02.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/03.jpg" data-sub-html="<p>Test cuts for the plates.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/03.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/04.jpg" data-sub-html="<p>The controller PCB.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/04.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/05.jpg" data-sub-html="<p>The controller PCB after reflow solder all the components.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/05.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/06.jpg" data-sub-html="<p>The controller PCB had two traces mixed up, here is the fix.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/06.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/07.jpg" data-sub-html="<p>Each key has an individual PCB.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/07.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/08.jpg" data-sub-html="<p>This tester is used for rapid development.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/08.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/09.jpg" data-sub-html="<p>All the leds, columns, and rows wired.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/09.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/10.jpg" data-sub-html="<p>An indepth look at the final wiring job.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/10.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/11.jpg" data-sub-html="<p>A far away look at the final wiring job.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/11.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/12.jpg" data-sub-html="<p>Keyboard with the battery inside.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/12.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/13.jpg" data-sub-html="<p>Each half assembled without keycaps.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/13.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/14.jpg" data-sub-html="<p>Assembled with keycaps.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/14.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/15.jpg" data-sub-html="<p>The right half has a joystick for controlling the mouse.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/15.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/16.jpg" data-sub-html="<p>The left half lit up.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/16.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/17.jpg" data-sub-html="<p>It has per-key RGB backlighting.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/17.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/18.jpg" data-sub-html="<p>Each half also supports variable tenting for better ergonomics.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/18.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/19.jpg" data-sub-html="<p>The controller has two USB ports for daisy chaining together.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/19.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/20.jpg" data-sub-html="<p>Keyboards connected together</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/20.jpg" />
+                    </a>
+                    <a class="gallery-item" data-video='{"source": [{"src":"./imgs/video.m4v", "type":"video/mp4"}], "attributes": {"preload": false, "controls": true}}' data-sub-html="<p>Demo of the keyboard in action.</p>">
+                        <img alt="acrylic" class="img-responsive" src="./imgs/video.jpg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/lightgallery.umd.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/thumbnail/lg-thumbnail.umd.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/video/lg-video.umd.js'></script>
+    <script>
+        jQuery("#animated-thumbnails-gallery")
+            .justifiedGallery({
+                captions: false,
+                lastRow: "hide",
+                rowHeight: 180,
+                margins: 5
+            })
+            .on("jg.complete", function() {
+                window.lightGallery(
+                    document.getElementById("animated-thumbnails-gallery"), {
+                        autoplayFirstVideo: false,
+                        pager: false,
+                        galleryId: "nature",
+                        plugins: [lgZoom, lgThumbnail, lgVideo],
+                        mobileSettings: {
+                            controls: false,
+                            showCloseIcon: false,
+                            download: false,
+                            rotate: false
+                        }
+                    }
+                );
+            });
+    </script>
+
+</body>
+
+</html>
