@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- https://codepen.io/sachinchoolur/pen/poebzpV -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wooden Keyboard</title>
+    <link rel="shortcut icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-thumbnail.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-video.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code|Lato&display=swap">
+
+    <style>
+        body {
+            height: 100vh;
+            background-color: #e8e8e8;
+            font-family: 'Lato', sans-serif;
+            color: #282828;
+        }
+        
+        #content {
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: #d8d8d8;
+            border-width: 1px;
+            text-align: center;
+        }
+        
+        #content a {
+            color: #282828;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #name {
+            padding: 15px 25px;
+            font-size: 2em;
+            border-bottom-style: solid;
+            border-bottom-color: #d8d8d8;
+            border-bottom-width: 1px;
+        }
+        
+        #info>div {
+            padding: 15px 20px;
+            white-space: nowrap;
+            transition: background-color 200ms;
+        }
+        
+        .link:hover,
+        .link:active {
+            background-color: #efefef;
+            cursor: pointer;
+        }
+        
+        .gallery-item {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header d-flex flex-column align-items-center">
+        <div id="content" class="mt-4 mb-4">
+            <div id="name">WOODEN KEYBOARD</div>
+            <div id="info">
+                <div id="github" class="link">
+                    <a href="https://github.com/rpbritton/keyboards">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-sm">
+        <div class="row justify-content-center mt-0 mb-4">
+            <div class="col col-md-10">
+                <div class="gallery-container" id="animated-thumbnails-gallery">
+                    <a class="gallery-item" data-src="./imgs/00.jpg" data-sub-html="<p>A keyboard made from CNC'ed wood</p>">
+                        <img class="img-responsive" src="./imgs/00.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/01.jpg" data-sub-html="<p>The whole keyboard was handwired.</p>">
+                        <img class="img-responsive" src="./imgs/01.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/02.jpg" data-sub-html="<p>Each key has a white led with brightness adjustment.</p>">
+                        <img class="img-responsive" src="./imgs/02.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/03.jpg" data-sub-html="<p>Very close to running out of pins on the Teensy 2.0.</p>">
+                        <img class="img-responsive" src="./imgs/03.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/04.jpg" data-sub-html="<p>The wiring in all it's glory.</p>">
+                        <img class="img-responsive" src="./imgs/04.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/05.jpg" data-sub-html="<p>The metal backplate is insulated with a disconnectable USB-C port.</p>">
+                        <img class="img-responsive" src="./imgs/05.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/06.jpg" data-sub-html="<p>The keyboard has neoprene feet.</p>">
+                        <img class="img-responsive" src="./imgs/06.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/07.jpg" data-sub-html="<p>There are knobs to adjust brightness, volume, and media controls.</p>">
+                        <img class="img-responsive" src="./imgs/07.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/08.jpg" data-sub-html="<p>The USB-C port.</p>">
+                        <img class="img-responsive" src="./imgs/08.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/09.jpg" data-sub-html="<p>The wood is padauk.</p>">
+                        <img class="img-responsive" src="./imgs/09.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/10.jpg" data-sub-html="<p>The keycaps are called ninja caps since the printing is on the front.</p>">
+                        <img class="img-responsive" src="./imgs/10.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/11.jpg" data-sub-html="<p>The LEDs are bright.</p>">
+                        <img class="img-responsive" src="./imgs/11.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/12.jpg" data-sub-html="<p>The switches are tactile.</p>">
+                        <img class="img-responsive" src="./imgs/12.jpg" />
+                    </a>
+                    <a class="gallery-item" data-src="./imgs/13.jpg" data-sub-html="<p>The wood is coated and has gold screw mounts visible from the outside.</p>">
+                        <img class="img-responsive" src="./imgs/13.jpg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/lightgallery.umd.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/thumbnail/lg-thumbnail.umd.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/video/lg-video.umd.js'></script>
+    <script>
+        jQuery("#animated-thumbnails-gallery")
+            .justifiedGallery({
+                captions: false,
+                lastRow: "hide",
+                rowHeight: 180,
+                margins: 5
+            })
+            .on("jg.complete", function() {
+                window.lightGallery(
+                    document.getElementById("animated-thumbnails-gallery"), {
+                        autoplayFirstVideo: false,
+                        pager: false,
+                        galleryId: "nature",
+                        plugins: [lgZoom, lgThumbnail, lgVideo],
+                        mobileSettings: {
+                            controls: false,
+                            showCloseIcon: false,
+                            download: false,
+                            rotate: false
+                        }
+                    }
+                );
+            });
+    </script>
+
+</body>
+
+</html>
